@@ -10,6 +10,7 @@ export default function App() {
   const [tenzies, setTenzies] = useState(false);
   const [count, setCount] = useState(0);
   const [time, setTime] = useState(0);
+  const [gameStarted, setGameStarted] = useState(false);
 
   useEffect(() => {
     const allHeld = dice.every((die) => die.isHeld);
@@ -60,6 +61,7 @@ export default function App() {
         return die.id === id ? { ...die, isHeld: !die.isHeld } : die;
       })
     );
+    setGameStarted(true);
   }
 
   const diceElements = dice.map((die) => (
@@ -84,6 +86,7 @@ export default function App() {
         {tenzies ? "New Game" : "Roll"}
       </button>
       <Timer
+        gameStarted={gameStarted}
         time={time}
         setTime={setTime}
         tenzies={tenzies}
