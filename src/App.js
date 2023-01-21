@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Die from "./components/Die";
 import Timer from "./components/Timer";
+import RollCount from "./components/RollCount";
 import Confetti from "react-confetti";
 import { nanoid } from "nanoid";
 
 export default function App() {
   const [dice, setDice] = useState(allNewDice());
   const [tenzies, setTenzies] = useState(false);
+  const [count, setCount] = useState(0);
   const [time, setTime] = useState(0);
 
   useEffect(() => {
@@ -87,6 +89,7 @@ export default function App() {
         tenzies={tenzies}
         holdDice={holdDice}
       />
+      <RollCount count={count} />
     </main>
   );
 }
