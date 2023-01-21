@@ -19,6 +19,7 @@ export default function App() {
         current value between rolls.
       </p>
       <div className="dice-container">{diceElements}</div>
+      <button className="roll-dice">Roll</button>
     </main>
   );
 }
