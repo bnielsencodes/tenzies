@@ -19,6 +19,24 @@ export default function App() {
     return newDice;
   }
 
+  function rollDice() {
+    if (!tenzies) {
+      setDice((oldDice) =>
+        oldDice.map((die) => {
+          return die.isHeld ? die : generateNewDie();
+        })
+      );
+      setCount(count + 1);
+      setGameStarted(true);
+    } else {
+      setTenzies(false);
+      setDice(allNewDice());
+      setCount(0);
+      setTime(0);
+      setGameStarted(false);
+    }
+  }
+
   const diceElements = dice.map((die) => (
     <Die
       key={die.id}
