@@ -82,6 +82,10 @@ export default function App() {
         {tenzies ? "New Game" : "Roll"}
       </button>
       <Timer
+        time={time}
+        setTime={setTime}
+        tenzies={tenzies}
+        holdDice={holdDice}
       />
     </main>
   );
