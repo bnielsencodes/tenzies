@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Die from "./components/Die";
+import { nanoid } from "nanoid";
 
 export default function App() {
   const [dice, setDice] = useState(allNewDice());
