@@ -4,6 +4,7 @@ import { nanoid } from "nanoid";
 
 export default function App() {
   const [dice, setDice] = useState(allNewDice());
+  const [tenzies, setTenzies] = useState(false);
   function generateNewDie() {
     return {
       value: Math.ceil(Math.random() * 6),
