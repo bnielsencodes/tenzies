@@ -1,6 +1,17 @@
 import React, { useEffect } from "react";
 
 export default function Timer(props) {
+  useEffect(() => {
+    let interval;
+    if (!props.tenzies && props.gameStarted) {
+      interval = setInterval(() => {
+        props.setTime((prevTime) => prevTime + 100);
+      }, 100);
+    } else if (props.tenzies) {
+      clearInterval(interval);
+    }
+    return () => clearInterval(interval);
+  }, [props.holdDice, props]);
 
   return (
     <div className="timer">
