@@ -2,6 +2,15 @@ import React, { useState, useEffect } from "react";
 import Die from "./components/Die";
 
 export default function App() {
+
+  function allNewDice() {
+    const newDice = [];
+    for (let i = 0; i < 10; i++) {
+      newDice.push(generateNewDie());
+    }
+    return newDice;
+  }
+
   const diceElements = dice.map((die) => (
     <Die
       key={die.id}
