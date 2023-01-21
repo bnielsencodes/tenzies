@@ -4,6 +4,7 @@ import Timer from "./components/Timer";
 import RollCount from "./components/RollCount";
 import Confetti from "react-confetti";
 import { nanoid } from "nanoid";
+import "./App.css";
 
 export default function App() {
   const [dice, setDice] = useState(allNewDice());
