@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Die from "./components/Die";
 
 export default function App() {
+  const [dice, setDice] = useState(allNewDice());
 
   function allNewDice() {
     const newDice = [];
