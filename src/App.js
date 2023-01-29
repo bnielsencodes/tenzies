@@ -95,5 +95,19 @@ export default function App() {
       />
       <RollCount count={count} />
     </main>
+          <div className="count-timer-container">
+            <RollCount count={count} />
+            <Timer
+              gameStarted={gameStarted}
+              time={time}
+              setTime={setTime}
+              tenzies={tenzies}
+              holdDice={holdDice}
+            />
+          </div>
+          <div className="dice-container">{diceElements}</div>
+          <button className="roll-btn" onClick={rollDice}>
+            {tenzies ? "New Game" : "Roll"}
+          </button>
   );
 }
