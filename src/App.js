@@ -75,9 +75,11 @@ export default function App() {
   ));
 
   return (
-    <main>
+    <div className="app">
       {tenzies && <Confetti />}
-    </main>
+      <div className="app--inner">
+        <main>
+          <h1 className="title">Tenzies</h1>
           {!tenzies && (
             <p className="instructions">
               Roll until all dice are the same. Click each die to freeze it at
@@ -100,5 +102,9 @@ export default function App() {
             {tenzies ? "New Game" : "Roll"}
           </button>
           {fastestTime && <FastestTime fastestTime={fastestTime} />}
+        </main>
+        <Footer />
+      </div>
+    </div>
   );
 }
