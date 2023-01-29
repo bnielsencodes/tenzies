@@ -35,6 +35,11 @@ main {
   text-align: center;
 }
 
+.you-won {
+  margin: 7px 0 0;
+  font-size: 22px;
+}
+
 .count-timer-container {
   display: flex;
   align-items: center;
@@ -123,6 +128,19 @@ main {
 
 .fastest-time span {
   margin-right: 1px;
+}
+
+.footer {
+  width: 100%;
+  color: #f5f5f5;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.footer a {
+  color: #59e391;
+  text-decoration: none;
 }
 
 }
