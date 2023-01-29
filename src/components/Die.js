@@ -6,6 +6,31 @@ import diceFive from "../assets/dice-five-regular.svg";
 import diceSix from "../assets/dice-six-regular.svg";
 
 export default function Die(props) {
+  // assign die face svgs
+  let dieFace = "";
+  switch (props.value) {
+    case 1:
+      dieFace = diceOne;
+      break;
+    case 2:
+      dieFace = diceTwo;
+      break;
+    case 3:
+      dieFace = diceThree;
+      break;
+    case 4:
+      dieFace = diceFour;
+      break;
+    case 5:
+      dieFace = diceFive;
+      break;
+    case 6:
+      dieFace = diceSix;
+      break;
+    default:
+      break;
+  }
+
   const styles = {
     backgroundColor: props.isHeld ? "#59E391" : "white",
   };
