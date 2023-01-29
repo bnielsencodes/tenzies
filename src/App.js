@@ -109,5 +109,6 @@ export default function App() {
           <button className="roll-btn" onClick={rollDice}>
             {tenzies ? "New Game" : "Roll"}
           </button>
+          {fastestTime && <FastestTime fastestTime={fastestTime} />}
   );
 }
