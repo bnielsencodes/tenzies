@@ -14,6 +14,22 @@ export default function App() {
   const [count, setCount] = useState(0);
   const [time, setTime] = useState(0);
   const [gameStarted, setGameStarted] = useState(false);
+  const [fastestTime, setFastestTime] = useState(
+    JSON.parse(localStorage.getItem("fastestTime")) || ""
+  );
+
+  function setRecord() {
+    const timeFloored = Math.floor(time / 10);
+    // Check if fastestTime doesn't exist or newest time is lower than fastestTime if so reassign the variable
+    if (!fastestTime || timeFloored < fastestTime) {
+      setFastestTime(timeFloored);
+    }
+  }
+
+  // Set fastestTime to localStorage every time it changes
+  useEffect(() => {
+    localStorage.setItem("fastestTime", JSON.stringify(fastestTime));
+  }, [fastestTime]);
 
   useEffect(() => {
     const allHeld = dice.every((die) => die.isHeld);
@@ -21,6 +37,7 @@ export default function App() {
     const allSameValue = dice.every((die) => die.value === firstValue);
     if (allHeld && allSameValue) {
       setTenzies(true);
+      setRecord();
     }
   }, [dice]);
 
