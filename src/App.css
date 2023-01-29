@@ -14,11 +14,10 @@ main {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  max-width: 800px;
-  height: 450px;
-  padding: 20px;
+  max-width: 460px;
+  padding: 33px 34.5px 32px;
   border-radius: 5px;
-  margin-inline: auto;
+  margin: 0 auto 50px;
   background-color: #f5f5f5;
 }
 
