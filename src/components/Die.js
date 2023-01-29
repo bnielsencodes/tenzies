@@ -32,11 +32,16 @@ export default function Die(props) {
   }
 
   const styles = {
-    backgroundColor: props.isHeld ? "#59E391" : "white",
+    backgroundImage: `url(${dieFace})`,
+    backgroundSize: "cover",
   };
+
   return (
-    <div className="die-face" style={styles} onClick={props.holdDice}>
-      <h2 className="die-num">{props.value}</h2>
+    <div
+      className={props.isHeld ? "die-face is-held" : "die-face"}
+      onClick={props.holdDice}
+    >
+      <div className="die-face--inner" style={styles}></div>
     </div>
   );
 }
