@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Die from "./components/Die";
 import Timer from "./components/Timer";
 import RollCount from "./components/RollCount";
+import FastestTime from "./components/FastestTime";
+import Footer from "./components/Footer";
 import Confetti from "react-confetti";
 import { nanoid } from "nanoid";
 import "./App.css";
