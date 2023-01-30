@@ -23,6 +23,7 @@ main {
   border-radius: 5px;
   margin: 0 auto 50px;
   background-color: #f5f5f5;
+  filter: drop-shadow(5px 5px 10px #000);
 }
 
 .title {
