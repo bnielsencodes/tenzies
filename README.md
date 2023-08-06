@@ -1,8 +1,9 @@
-# Tenzies - An easy to learn dice game that players of all ages will enjoy.
+# Tenzies
 
 ## Table of Contents
 
 - [Overview](#overview)
+  - [Description](#description)
   - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
@@ -11,6 +12,10 @@
 - [Author](#author)
 
 ## Overview
+
+### Description
+
+#### An easy to learn dice game that players of all ages will enjoy.
 
 ### Screenshots
 
