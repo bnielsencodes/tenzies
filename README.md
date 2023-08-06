@@ -33,7 +33,7 @@
 
 - [React](https://reactjs.org/) - JS library
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [Create React App]([https://reactjs.org/](https://create-react-app.dev/)) - React Build Tool
+- [Create React App]([https://reactjs.org/](https://create-react-app.dev/) - React Build Tool
 - [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout)
 - [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
 - [Semantic HTML5 markup](https://www.w3schools.com/html/html5_semantic_elements.asp)
