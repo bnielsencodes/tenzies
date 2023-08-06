@@ -1,11 +1,12 @@
 # Tenzies
 
+#### An easy to learn dice game that players of all ages will enjoy.
+
 ## Table of Contents
 
 - [Overview](#overview)
-  - [Description](#description)
   - [Screenshots](#screenshots)
-  - [Links](#links)
+  - [Link](#link)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
@@ -14,8 +15,6 @@
 ## Overview
 
 ### Description
-
-#### An easy to learn dice game that players of all ages will enjoy.
 
 ### Screenshots
 
@@ -27,9 +26,8 @@
 
 <img src="src/assets/screenshots/tenzies-mobile.png" alt="screenshot of Tenzies mobile app" width="300">  <img src="src/assets/screenshots/tenzies-mobile-won.png" alt="screenshot of Tenzies mobile app" width="300">
 
-### Links
+### Link
 
-- Solution URL: [https://github.com/bnielsencodes/tenzies](https://github.com/bnielsencodes/tenzies)
 - Live Site URL: [https://bnielsencodes.github.io/tenzies](https://bnielsencodes.github.io/tenzies)
 
 ## My Process
@@ -51,7 +49,7 @@
 
 ## Author
 
-- Website - [Brandon Nielsen](https://www.bnielsen.dev)
-- LinkedIn - [Brandon Nielsen](https://www.linkedin.com/in/bnielsencodes)
+- Portfolio Website - [bnielsen.dev](https://bnielsen.dev)
+- LinkedIn - [/in/bnielsencodes](https://linkedin.com/in/bnielsencodes)
 - Twitter - [@bnielsencodes](https://twitter.com/bnielsencodes)
 - Frontend Mentor - [@bnielsencodes](https://www.frontendmentor.io/profile/bnielsencodes)
